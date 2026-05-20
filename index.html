@@ -172,7 +172,7 @@ body {
 .meta-value { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; color: #888; }
 .meta-value.positive { color: #4a7a5a; }
 .meta-value.neutral { color: #444; }
-.analysis-body { max-width: 600px; }
+.analysis-body { max-width: 1200px; }
 .analysis-section-title { font-size: 8px; letter-spacing: 5px; color: #333; text-transform: uppercase; margin-bottom: 14px; margin-top: 36px; }
 .analysis-text { font-size: 12px; color: #555; line-height: 2.1; font-style: italic; }
 .chart-placeholder {
@@ -190,8 +190,9 @@ body {
   gap: 28px;
 }
 .chart-img {
-  width: 100%;
-  max-width: 700px;
+  width: 600px;
+  max-width: 600px;
+  flex-shrink: 0;
   display: block;
   border: 0.5px solid #1c1c1c;
   filter: grayscale(15%) brightness(0.92);
@@ -419,7 +420,7 @@ body {
 
     <!-- CHART 1 -->
     <div class="chart-block">
-      <img class="chart-img" src="images/sell_img1.png" alt="Weekly Rejection">
+      <img class="chart-img" src="images/sell_img1.png" style="max-width:700px;width:100%;" alt="Weekly Rejection">
       <div class="chart-caption" onclick="toggleCaption(this)">
         <span class="caption-label"><span class="caption-arrow">›</span>Weekly</span>
         <div class="caption-text">
@@ -430,7 +431,7 @@ body {
 
     <!-- CHART 2 -->
     <div class="chart-block">
-      <img class="chart-img" src="images/sell_img2.png" alt="4H MMxM">
+      <img class="chart-img" src="images/sell_img2.png" style="max-width:700px;width:100%;" alt="4H MMxM">
       <div class="chart-caption" onclick="toggleCaption(this)">
         <span class="caption-label"><span class="caption-arrow">›</span>4H</span>
         <div class="caption-text">
@@ -441,7 +442,7 @@ body {
 
     <!-- CHART 3 -->
     <div class="chart-block">
-      <img class="chart-img" src="images/sell_img3.png" alt="Top Zoom">
+      <img class="chart-img" src="images/sell_img3.png" style="max-width:700px;width:100%;" alt="Top Zoom">
       <div class="chart-caption" onclick="toggleCaption(this)">
         <span class="caption-label"><span class="caption-arrow">›</span>Top Zoom</span>
         <div class="caption-text">
@@ -452,7 +453,7 @@ body {
 
     <!-- CHART 4 -->
     <div class="chart-block">
-      <img class="chart-img" src="images/sell_img4.png" alt="HTF Breaker Entry">
+      <img class="chart-img" src="images/sell_img4.png" style="max-width:700px;width:100%;" alt="HTF Breaker Entry">
       <div class="chart-caption" onclick="toggleCaption(this)">
         <span class="caption-label"><span class="caption-arrow">›</span>HTF Breaker</span>
         <div class="caption-text">
@@ -463,7 +464,7 @@ body {
 
     <!-- CHART 5 -->
     <div class="chart-block">
-      <img class="chart-img" src="images/sell_img5.png" alt="Execution" style="max-width:420px;">
+      <img class="chart-img" src="images/sell_img5.png" style="max-width:420px;width:100%;" alt="Execution">
       <div class="chart-caption" onclick="toggleCaption(this)">
         <span class="caption-label"><span class="caption-arrow">›</span>Execution</span>
         <div class="caption-text">
